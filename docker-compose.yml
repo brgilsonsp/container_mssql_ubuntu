@@ -1,0 +1,10 @@
+services:
+  mssql_2019:
+    image: brgilsonsp/mssql2019
+    build:
+      context: .
+      dockerfile: Dockerfile
+      no_cache: true
+      tags:
+        - "brgilsonsp/mssql2019:v1.0"
+        - "winix/mssql2019:v1.0"
