@@ -21,6 +21,7 @@ EXPOSE 1433/tcp
 # User root to execute configuration and installation
 USER root
 
+RUN mkdir -p $DIR_SCRITP_DB
 RUN mkdir -p $DIR_CONFIG_DB
 
 WORKDIR $DIR_CONFIG_DB
@@ -31,6 +32,6 @@ RUN chmod +x ./configure-db.sh
 
 
 #User mssql to execute BD
-USER mssql
+#USER mssql
 
 CMD ./entrypoint.sh
