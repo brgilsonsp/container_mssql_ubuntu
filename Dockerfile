@@ -3,6 +3,7 @@ FROM mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04
 LABEL version="1.0"
 LABEL author="Gilson Souza"
 LABEL vendor="Winix"
+LABEL service="Banco de Dados MS SqlServer 2019"
 LABEL vendor_image_base="https://hub.docker.com/_/microsoft-mssql-server"
 LABEL operation_system="Ubuntu Focal 20.04"
 
